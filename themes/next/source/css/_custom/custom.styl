@@ -1,0 +1,107 @@
+/**
+ * Custom styles.
+ */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes widenText {
+  from {
+    font-weight: normal;
+  }
+  to {
+    font-weight: 600;
+    letter-spacing: 5px
+  }
+}
+
+code {
+  color: #4d8cf4;
+  background-color: whitesmoke;
+}
+
+blockquote {
+  border-left: 4px solid #39aa56;
+}
+
+.posts-expand .post-body img {
+  margin: 0 auto;
+}
+
+#qr img {
+  width: 240px;
+}
+
+.algolia-hit-item-link em {
+  color: red;
+  font-style: normal;
+}
+
+::selection {
+  color: #d1ff79;
+}
+
+.site-meta .site-title {
+  width: 150px;
+  height: 36px;
+}
+
+html {
+  caret-color: red;
+}
+
+.posts-expand .post-body img {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+          0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+          0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+
+.menu .menu-item a:hover .fa {
+  animation: rotate 3s linear infinite;
+}
+
+.post-meta-item:hover .post-meta-item-icon .fa {
+  animation: rotate 3s linear infinite;
+}
+
+.posts-expand .post-tags a:nth-child(3n+1) {
+  background-color: #00cc7d;
+  color: #333;
+}
+
+.posts-expand .post-tags a:nth-child(3n+1):hover {
+  background-color: #02a868;
+}
+
+.posts-expand .post-tags a:nth-child(3n+2) {
+  background-color: #a300cc;
+  color: #fff;
+}
+
+.posts-expand .post-tags a:nth-child(3n+2):hover {
+  background-color: #8501a7;
+}
+
+
+.page-archive .posts-collapse .post-title:hover {
+  font-weight: 600;
+  animation: widenText 3s linear infinite;
+}
+
+.site-meta .site-title:hover {
+  color: #bd0000;
+  transition: color 1s;
+}
+
+.posts-expand .post-body a[rel=noopener] {
+  color: #4d8cf4;
+}
