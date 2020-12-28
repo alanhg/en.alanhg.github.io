@@ -74,7 +74,7 @@ Click the workflow title link to access the download page. The download page wil
 	![](https://static.1991421.cn/2020/evernote-workflow.gif)
 	
 ## Summary
-- For efficiency tools, there is not best but the right one. 
+- For efficiency tools, there is no best but the right one. 
 - In actual installation and use, you may meet problems, there are the following solutions.
      - [Here](https://github.com/alanhg/others-note/issues?q=is%3Aissue+is%3Aopen+label%3AAlfred)，I maintained a lot of issues that I encountered in actual use, check whether there are related issues, and please post issues.
      - Ask questions on the download page of the above workflow, and the community enthusiasts or authors will reply.
