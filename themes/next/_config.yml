@@ -611,7 +611,7 @@ calendar:
 # Disqus
 disqus:
   enable: true
-  shortname: qianghe
+  shortname: attack-on-life
   count: true
   lazyload: true
 
