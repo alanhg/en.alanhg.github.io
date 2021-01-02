@@ -21,7 +21,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.20.0]
+        node-version: [ 12.20.0 ]
 
     steps:
       - name: Git checkout
@@ -49,27 +49,27 @@ jobs:
       - name: Build
         run: |
           npx hexo g
-#          export HEXO_ALGOLIA_INDEXING_KEY=fb41a459b46e7dda7af65d45ad5f8432
-#          npx hexo algolia
-#      - name: SSH agent
-#        uses: webfactory/ssh-agent@v0.4.1
-#        with:
-#          ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
+      #          export HEXO_ALGOLIA_INDEXING_KEY=fb41a459b46e7dda7af65d45ad5f8432
+      #          npx hexo algolia
+      - name: SSH agent
+        uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
       - name: Deploy VPS
         run: |
           ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
           rsync -az -vv --delete -e 'ssh -p 22' public/ root@1991421.cn:/var/www/blog/public-en/
-#      - name: Deploy GitHub
-#        uses: ad-m/github-push-action@master
-#        with:
-#          github_token: ${{ secrets.BLOG_DEPLOY_4_GITHUB_KEY }}
-#          branch: master
-#          directory: ./public
-#          force: true
+      #      - name: Deploy GitHub
+      #        uses: ad-m/github-push-action@master
+      #        with:
+      #          github_token: ${{ secrets.BLOG_DEPLOY_4_GITHUB_KEY }}
+      #          branch: master
+      #          directory: ./public
+      #          force: true
       - name: Notify
         uses: appleboy/telegram-action@master
         with:
-            to: ${{ secrets.TELEGRAM_TO }}
-            token: ${{ secrets.TELEGRAM_TOKEN }}
-            message: Blog-en deployment and update completed, see [here](https://en.1991421.cn).
-            format: markdown
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: Blog-en deployment and update completed, see [here](https://en.1991421.cn).
+          format: markdown
