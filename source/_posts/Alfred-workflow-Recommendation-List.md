@@ -2,7 +2,7 @@
 title: Alfred workflow Recommendation List
 tags:
   - Alfred
-  - Workflow
+  - Alfred Workflow
   - Effectiveness
   - Geek
 abbrlink: 5fcf3a6d
@@ -11,7 +11,7 @@ date: 2020-12-05 11:11:51
 > I love Alfred so much that once I find one of my own efficiency needs, I will study the feasibility of Alfred, and immediately look for third-party or custom development if it is feasible. Until today, I have already developed 16 workflows , and many experience posts, it's a really good experience.
 
 
-Whether it is self-developed or from third-party , most of them that are being high frequency used. Here to share, may help some friends.
+Whether it is self-developed or from a third-party , most of them that are being high frequency used. Here to share, may help some friends.
 
 ## Statement
 
